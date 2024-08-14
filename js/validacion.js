@@ -20,7 +20,10 @@ document.getElementById("regBtn").addEventListener("click", function() {
     // Validar la longitud de la contraseña
 
     // Validar que las contraseñas coincidan
-
+    if (password1 !== password2){
+        showAlertError();
+        return;
+    }
     // Validar que se haya aceptado los términos y condiciones
 
     // Si todas las validaciones pasan, mostrar el éxito
