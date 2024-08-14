@@ -22,10 +22,7 @@ if (!nombre || !apellido || !email || !password1 || !password2) {
     return;
 }
     // Validar la longitud de la contraseña
- if (password1.length < 6) {
-        showAlertError();
-        return;
-    }
+
     // Validar que las contraseñas coincidan
     if (password1 !== password2){
         showAlertError();
