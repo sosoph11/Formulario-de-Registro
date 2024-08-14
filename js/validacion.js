@@ -15,7 +15,11 @@ document.getElementById("regBtn").addEventListener("click", function() {
     let password2 = document.getElementById("password2").value;
     let terminos = document.getElementById("terminos").checked;
 
-    // Validar que ningún campo esté vacío
+
+// Validar que ningún campo esté vacío
+if (!nombre || !apellido || !email || !password1 || !password2) {
+    showAlertError();
+    return;
 }
     // Validar la longitud de la contraseña
 
