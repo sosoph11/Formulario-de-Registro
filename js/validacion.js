@@ -32,5 +32,9 @@ if (!nombre || !apellido || !email || !password1 || !password2) {
         return;
     }
     // Validar que se haya aceptado los términos y condiciones
-
+     if (!terminos) {
+        showAlertError();
+        return;
+    }
     // Si todas las validaciones pasan, mostrar el éxito
+    showAlertSuccess();
