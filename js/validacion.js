@@ -22,5 +22,10 @@ document.getElementById("regBtn").addEventListener("click", function() {
     // Validar que las contraseñas coincidan
 
     // Validar que se haya aceptado los términos y condiciones
+    if (!terminos) {
+        showAlertError();
+        return;
+    }
 
     // Si todas las validaciones pasan, mostrar el éxito
+    showAlertSuccess;
