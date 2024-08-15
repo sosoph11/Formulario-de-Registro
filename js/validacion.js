@@ -6,7 +6,8 @@ function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
 
-document.getElementById("regBtn").addEventListener("click", function() {
+document.getElementById("regBtn").addEventListener("click", function(event) {
+    event.preventDefault();
     // Obtener los valores de los campos
     let nombre = document.getElementById("nombre").value.trim();
     let apellido = document.getElementById("apellido").value.trim();
